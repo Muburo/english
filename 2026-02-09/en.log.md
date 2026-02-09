@@ -1,0 +1,5 @@
+What matters most is someone and deeply think the making points and flow or the meeting before the meeting starts. It's a crucial, ignore and organize their points. It becomes the main meeting, it's really pointing and a lot of waste of time. So, one important thing in coming, think deeply what the meeting deals.
+
+The second point is keep the time. Be safe. More and decide the meeting time. 1 minute, 1 hour. This really extends the time with more thought and unnecessary time. So, if the meeting starts, the facilitator should declare the time. Our meeting will end in 30 minutes or in one hour. This is the solution. And final point is the meeting members, the good meeting and the good
+
+The fewer the meeting members, the good discussion is held. If a lot of members participate in the meeting, the discussion point becomes meaningless. So it is important to discuss side the best member so in all right so in my idea is that
