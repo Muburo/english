@@ -1,0 +1,3 @@
+# Learning Programming Through Vibe Coding
+
+What I want to learn now is programming. With advanced type of AI, now people, the work is really into vibe coding. So I'm trying this vibe coding. So I could learn GitHub, protocol, and things like that. and it's kind of difficult because I don't have experience in creating the programs, apps, and systems in reality. So without those experience, I don't have the basics of mindset and thinking. How to deal with next step is what? What is the weak point? What is the issue? So I want to learn those kind of thoughts. But I will never give up. If I keep confident, I can understand in the future. So now, I find it interesting. I want to find it interesting. to provide new technology and new experience.
