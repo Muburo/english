@@ -15,9 +15,10 @@ english/
 ├── CLAUDE.md
 ├── .gitignore
 ├── plans/          # Claude Code 作業ファイル（一時的）
-└── YYYY-MM-DD/     # 日付フォルダ（1日1フォルダ）
-    ├── en_log.md   # 英語スピーチの書き起こし
-    └── ja_log.md   # 日本語での振り返り（音声入力）
+└── YYYY-MM/        # 月別フォルダ
+    └── YYYY-MM-DD/ # 日付フォルダ（1日1フォルダ）
+        ├── en_log.md   # 英語スピーチの書き起こし
+        └── ja_log.md   # 日本語での振り返り（音声入力）
 ```
 
 ### ファイル命名規則
