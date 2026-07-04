@@ -20,7 +20,7 @@ english/
 ├── CLAUDE.md
 ├── references/     # 詳細仕様（レビュー仕様・進化レポート仕様）
 ├── reports/        # レビュー出力（quick-*.md / review-*.md）
-├── history/        # 練習の歩み（PRACTICE-HISTORY.md — 方法の変遷年表）
+├── history/        # 練習の歩み（PRACTICE-HISTORY.md）・表現ストック（EXPRESSION-STOCK.md）
 ├── progress/       # 月次進化レポート（progress-YYYY-MM.md / TIMELINE.md）
 └── YYYY-MM/        # 月別フォルダ
     └── YYYY-MM-DD/ # 日付フォルダ（1日1フォルダ）
@@ -73,6 +73,7 @@ english/
 - **進化レポート**: 月1回、前月分を生成。トリガー「英語の進化レポート」「進化レポート出して」。仕様の正本は [references/progress-specs.md](references/progress-specs.md)（構成・出力先・Obsidian 連携・git まで全部そこに従う）
 - **タイムライン**: [progress/TIMELINE.md](progress/TIMELINE.md) — 1行=1ヶ月の累積ダッシュボード。レポート生成時に追記
 - **歩み**: [history/PRACTICE-HISTORY.md](history/PRACTICE-HISTORY.md) — 練習方法の変遷年表。**方法を変えたら追記**（Obsidian `04_Life/5.💬英語/歩み/英語練習の歩み.md` と両更新）
+- **表現ストック**: [history/EXPRESSION-STOCK.md](history/EXPRESSION-STOCK.md) — 言えるようになった表現の累積台帳（4カテゴリ・昇格パイプライン）。月次レポートとワンセットで更新。単体トリガー「表現ストック更新して」。手順は progress-specs.md「表現ストック更新」
 - Obsidian の `04_Life/5.💬英語/2026/` はライトレビュー/フルレビューのインデックス専用。歩み・進化レポート系は `04_Life/5.💬英語/歩み/` に置く
 
 ## 運用ルール
