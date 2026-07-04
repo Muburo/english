@@ -10,6 +10,7 @@ GitHub: `Muburo/english`（public）
 
 > **詳細仕様の所在（必要時に読む）**:
 > - レビュー仕様（定量指標・ライトレビュー構成・フルレビュー構成・スコア/CEFR 基準）→ [references/review-specs.md](references/review-specs.md) が正本。**レビュー生成前に必ず読む**
+> - 進化レポート仕様（月次プログレストラッキング）→ [references/progress-specs.md](references/progress-specs.md) が正本。**生成前に必ず読む**
 > - 日次ログの保存・ライトレビュー・push の一括フロー → english-entry スキル（`~/.claude/skills/english-entry/`）
 
 ## データ構造
@@ -17,8 +18,10 @@ GitHub: `Muburo/english`（public）
 ```
 english/
 ├── CLAUDE.md
-├── references/     # 詳細仕様（レビュー仕様）
+├── references/     # 詳細仕様（レビュー仕様・進化レポート仕様）
 ├── reports/        # レビュー出力（quick-*.md / review-*.md）
+├── history/        # 練習の歩み（PRACTICE-HISTORY.md — 方法の変遷年表）
+├── progress/       # 月次進化レポート（progress-YYYY-MM.md / TIMELINE.md）
 └── YYYY-MM/        # 月別フォルダ
     └── YYYY-MM-DD/ # 日付フォルダ（1日1フォルダ）
         ├── en_log.md   # 英語スピーチの書き起こし（音声認識）
@@ -62,6 +65,15 @@ english/
 
 - レポート冒頭に定量指標＋100点スコア＋CEFR を付ける（基準は references/review-specs.md）
 - フルレビューにカテゴリ別表現テーブルや Anki リストの大量列挙を含めない（それはライトの役割）
+
+## 進化レポート（月次）と歩み
+
+変化の過程を追うためのトラッキング層（2026-07-04 新設）。日次のライトレビューとは役割が別（コーチングではなく定点観測）。
+
+- **進化レポート**: 月1回、前月分を生成。トリガー「英語の進化レポート」「進化レポート出して」。仕様の正本は [references/progress-specs.md](references/progress-specs.md)（構成・出力先・Obsidian 連携・git まで全部そこに従う）
+- **タイムライン**: [progress/TIMELINE.md](progress/TIMELINE.md) — 1行=1ヶ月の累積ダッシュボード。レポート生成時に追記
+- **歩み**: [history/PRACTICE-HISTORY.md](history/PRACTICE-HISTORY.md) — 練習方法の変遷年表。**方法を変えたら追記**（Obsidian `04_Life/5.💬英語/歩み/英語練習の歩み.md` と両更新）
+- Obsidian の `04_Life/5.💬英語/2026/` はライトレビュー/フルレビューのインデックス専用。歩み・進化レポート系は `04_Life/5.💬英語/歩み/` に置く
 
 ## 運用ルール
 
