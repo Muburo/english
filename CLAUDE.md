@@ -19,7 +19,7 @@ GitHub: `Muburo/english`（public）
 english/
 ├── CLAUDE.md
 ├── references/     # 詳細仕様（レビュー仕様・進化レポート仕様）
-├── reports/        # レビュー出力（quick-*.md / review-*.md）
+├── reports/        # ライトレビュー出力（quick-*.md）。archive/ に旧フル/週次レビュー
 ├── history/        # 練習の歩み（PRACTICE-HISTORY.md）・表現ストック（EXPRESSION-STOCK.md）
 ├── progress/       # 月次進化レポート（progress-YYYY-MM.md / TIMELINE.md）
 └── YYYY-MM/        # 月別フォルダ
@@ -55,6 +55,8 @@ english/
 
 ## レビュー2種（詳細は references/review-specs.md）
 
+> **フルレビューは休止中（2026-07-04）**: 見返さなくなったため過去分（月次・週次）は `reports/archive/` に移動し、Obsidian のインデックスも `04_Life/5.💬英語/アーカイブ/` へ移した。新規生成はしない（月次の定点観測は進化レポートが担う）。仕様は references/review-specs.md に残してあり、再開時はそのまま使える。
+
 | | ライトレビュー | フルレビュー |
 |---|---|---|
 | トリガー | 「今日の分をレビューして」「ライトレビューして」、期間+「軽く」 | 「今月のフルレビュー」「フルレポート出して」、2週間以上の期間 |
@@ -86,7 +88,7 @@ english/
 2. Obsidian `100_Notes/1.2026年/` に同一内容のノートを作成（年が変わったらフォルダ更新）
    - 命名: `ライトレビュー — YYYY-MM-DD.md` / `ライトレビュー — YYYY-WXX.md` / `フルレビュー — YYYY-MM.md`（`—` は em-dash）
 3. インデックスに `[[ノート名]]` リンクを追加（月見出し `## YYYY-MM` の下、新しい日付が上）
-   - ライト: `obsidian-vault/04_Life/5.💬英語/2026/ライトレビュー.md` ／ フル: 同 `フルレビュー.md`
+   - ライト: `obsidian-vault/04_Life/5.💬英語/2026/ライトレビュー.md`（フルのインデックスは `04_Life/5.💬英語/アーカイブ/フルレビュー.md` にアーカイブ済み）
 4. git commit（english リポジトリ）
 
 ### public リポジトリの注意
