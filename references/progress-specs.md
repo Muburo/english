@@ -53,14 +53,14 @@
 1. `progress/progress-YYYY-MM.md` に保存
 2. `progress/TIMELINE.md` に当月の行を追記（一言コメント付き）
 3. Obsidian `<vault>/100_Notes/1.YYYY年/進化レポート — YYYY-MM.md` に同一内容のノートを作成（`—` は em-dash）
-4. Obsidian `<vault>/04_Life/5.💬英語/歩み/進化レポート.md`（インデックス）にリンクを追記し、TIMELINE 表を同期する
+4. Obsidian `<vault>/05_Knowledge/98.🗄 裏方/💬 英語の歩み/進化レポート.md`（インデックス）にリンクを追記し、TIMELINE 表を同期する
 5. 練習方法が変わった月は `history/PRACTICE-HISTORY.md` と Obsidian 歩みノートの年表にも追記
 6. **表現ストックを更新する**（下記「表現ストック更新」参照。レポート生成とワンセット）
 7. git commit（`docs: YYYY-MM の進化レポートを作成`）+ push
 
 ## 表現ストック更新（月次レポートとワンセット／単体トリガー「表現ストック更新して」）
 
-正本: `history/EXPRESSION-STOCK.md` ／ Obsidian ビュー: `04_Life/5.💬英語/歩み/表現ストック.md`（内容同一・両方更新）。
+正本: `history/EXPRESSION-STOCK.md` ／ Obsidian ビュー: `05_Knowledge/98.🗄 裏方/💬 英語の歩み/表現ストック.md`（内容同一・両方更新）。
 
 4カテゴリの昇格パイプライン: **4（言いたい）→ 3（今月言えた）→ 1（定着ストック）**。2（よく使う型）は頻度観察。
 
@@ -78,4 +78,4 @@
 ## 注意
 
 - english リポジトリは **public**。個人名・職場の具体情報を書かない
-- Obsidian `04_Life/5.💬英語/2026/` フォルダには置かない（そこはライトレビュー/フルレビューのインデックス専用）
+- Obsidian `04_Life/5.💬英語/` 直下には置かない（本人が開くものだけの場所。2026-11-18 再編）

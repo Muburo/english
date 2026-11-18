@@ -55,7 +55,7 @@ english/
 
 ## レビュー2種（詳細は references/review-specs.md）
 
-> **フルレビューは休止中（2026-07-04）**: 見返さなくなったため過去分（月次・週次）は `reports/archive/` に移動し、Obsidian のインデックスも `04_Life/5.💬英語/アーカイブ/` へ移した。新規生成はしない（月次の定点観測は進化レポートが担う）。仕様は references/review-specs.md に残してあり、再開時はそのまま使える。
+> **フルレビューは休止中（2026-07-04）**: 見返さなくなったため過去分（月次・週次）は `reports/archive/` に移動し、Obsidian のインデックスも `05_Knowledge/99.💤 休眠/🗂 英語フルレビュー（2026-11-18 引退）/` へ移した。新規生成はしない（月次の定点観測は進化レポートが担う）。仕様は references/review-specs.md に残してあり、再開時はそのまま使える。
 
 | | ライトレビュー | フルレビュー |
 |---|---|---|
@@ -74,9 +74,9 @@ english/
 
 - **進化レポート**: 月1回、前月分を生成。トリガー「英語の進化レポート」「進化レポート出して」。仕様の正本は [references/progress-specs.md](references/progress-specs.md)（構成・出力先・Obsidian 連携・git まで全部そこに従う）
 - **タイムライン**: [progress/TIMELINE.md](progress/TIMELINE.md) — 1行=1ヶ月の累積ダッシュボード。レポート生成時に追記
-- **歩み**: [history/PRACTICE-HISTORY.md](history/PRACTICE-HISTORY.md) — 練習方法の変遷年表。**方法を変えたら追記**（Obsidian `04_Life/5.💬英語/歩み/英語練習の歩み.md` と両更新）
+- **歩み**: [history/PRACTICE-HISTORY.md](history/PRACTICE-HISTORY.md) — 練習方法の変遷年表。**方法を変えたら追記**（Obsidian `05_Knowledge/98.🗄 裏方/💬 英語の歩み/英語練習の歩み.md` と両更新）
 - **表現ストック**: [history/EXPRESSION-STOCK.md](history/EXPRESSION-STOCK.md) — 言えるようになった表現の累積台帳（4カテゴリ・昇格パイプライン）。月次レポートとワンセットで更新。単体トリガー「表現ストック更新して」。手順は progress-specs.md「表現ストック更新」
-- Obsidian の `04_Life/5.💬英語/2026/` はライトレビュー/フルレビューのインデックス専用。歩み・進化レポート系は `04_Life/5.💬英語/歩み/` に置く
+- Obsidian の `04_Life/5.💬英語/` 直下は本人が開くものだけ（練習ページ・使い方・ライトレビュー目次・🗂 練習ログ・Road to Native。2026-11-18 再編で 2026/ フォルダは廃止）。歩み・進化レポート系は `05_Knowledge/98.🗄 裏方/💬 英語の歩み/` に置く
 
 ## 運用ルール
 
@@ -88,7 +88,7 @@ english/
 2. Obsidian `100_Notes/1.2026年/` に同一内容のノートを作成（年が変わったらフォルダ更新）
    - 命名: `ライトレビュー — YYYY-MM-DD.md` / `ライトレビュー — YYYY-WXX.md` / `フルレビュー — YYYY-MM.md`（`—` は em-dash）
 3. インデックスに `[[ノート名]]` リンクを追加（月見出し `## YYYY-MM` の下、新しい日付が上）
-   - ライト: `obsidian-vault/04_Life/5.💬英語/2026/ライトレビュー.md`（フルのインデックスは `04_Life/5.💬英語/アーカイブ/フルレビュー.md` にアーカイブ済み）
+   - ライト: `obsidian-vault/04_Life/5.💬英語/ライトレビュー.md`（フルのインデックスは `05_Knowledge/99.💤 休眠/🗂 英語フルレビュー（2026-11-18 引退）/フルレビュー.md` にアーカイブ済み）
 4. git commit（english リポジトリ）
 
 ### public リポジトリの注意
