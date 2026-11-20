@@ -1,23 +1,25 @@
-"""英語お題: Anki済みの練習ページを記録に残して、Obsidian から english リポへ移す（Obsidian には残さない）。
+"""英語お題「チェックした英語を取り込んで」: Anki照合 → リポに保存 → Obsidian の元ページをゴミ箱へ。
 
-使い方: python odai/archive_odai.py            # status: Anki済み のページを全部処理
-        python odai/archive_odai.py --dry-run  # 何をするかだけ表示
-記録先（このフォルダ）:
-  sessions.jsonl … 1行=1日（日付・モード・場面・CEFR・点数）
-  phrases.jsonl  … 1行=言いたかった1件（日本語・実際の発話・2案・選んだ案・Anki日・ヒント）
-ページ本体は english/YYYY-MM/YYYY-MM-DD/odai_page.md（en_log/ja_log の隣）に移す。
-同じ id は上書き（二重登録しない）。
+使い方: python odai/archive_odai.py            # チェック（- [x]）のあるページを全部処理
+        python odai/archive_odai.py --dry-run  # 照合と予定だけ表示（何も書かない・消さない）
+一連の手順（1ページずつ。途中で止まったページは Obsidian に残す）:
+  1. Anki照合 … チェックした英文が全部 Anki（AnkiConnect）に入っているか確かめ、行に「✅ Anki M/D」を付ける。
+                 1つでも見つからなければそのページは止める（保存もゴミ箱もしない）
+  2. 保存     … ページ本体を english/YYYY-MM/YYYY-MM-DD/odai_page.md（status: Anki済み）へ、
+                 学習記録を odai/sessions.jsonl（1行=1日）・phrases.jsonl（1行=言いたかった1件）へ。同じ id は上書き
+  3. コミット … english リポに commit → push（push 失敗は報告だけ。commit できなければゴミ箱に移さない）
+  4. ゴミ箱   … Obsidian の元ページを OS のゴミ箱へ（Mac=Finder／Win=ごみ箱。完全削除はしない）
 """
-import io, os, re, json, sys, shutil, pathlib
+import io, os, re, json, sys, html, datetime, pathlib, subprocess, urllib.request
 
 HERE = pathlib.Path(__file__).resolve().parent
 VAULT = pathlib.Path(os.environ.get("OBSIDIAN_VAULT", ""))
 PAGES = VAULT / "04_Life" / "5.💬英語"
 REPO = HERE.parent
+CHECK = re.compile(r"^(- \[x\] )(.*?)(?:\s*✅ Anki (\S+))?$", re.M)
 
 
-def parse(path):
-    s = io.open(path, encoding="utf-8").read()
+def parse(s):
     fm = dict(re.findall(r"^(\w+): (.*)$", s.split("---")[1], re.M))
     head = s.split("## 今日のお題")[0]
     m = re.search(r"\*\*CEFR：(\w+)（(\d+)点", head)
@@ -57,24 +59,122 @@ def upsert(path, rows, key):
             f.write(json.dumps(old[k], ensure_ascii=False) + "\n")
 
 
+# ---- Anki 照合（読むだけ。登録はしない） ----
+def anki_port():
+    port = os.environ.get("ANKI_CONNECT_PORT")
+    if port is None:  # 8765 は実験場が使う。AnkiConnect は config.json のポート（Mac=8767）
+        base = (pathlib.Path(os.environ["APPDATA"]) / "Anki2" if os.name == "nt" and os.environ.get("APPDATA")
+                else pathlib.Path.home() / "Library" / "Application Support" / "Anki2")
+        cfg = base / "addons21" / "2055492159" / "config.json"
+        if cfg.exists():
+            port = str(json.loads(cfg.read_text(encoding="utf-8")).get("webBindPort", 8765))
+    return int(port or 8765)
+
+
+def anki(action, **params):
+    req = urllib.request.Request(f"http://127.0.0.1:{anki_port()}",
+                                 json.dumps({"action": action, "version": 6, "params": params}).encode())
+    r = json.load(urllib.request.urlopen(req, timeout=10))
+    if r.get("error"):
+        raise RuntimeError(r["error"])
+    return r["result"]
+
+
+def norm(t):
+    t = html.unescape(re.sub(r"<[^>]+>|\[sound:[^\]]*\]", " ", t))
+    return re.sub(r"\s+", " ", t.replace("’", "'").replace("—", "-")).strip().lower()
+
+
+def find_in_anki(sentence):
+    """英文を含むノートを探し、そのノートの登録日（YYYY-MM-DD）を返す。無ければ None。"""
+    words = re.findall(r"[A-Za-z0-9-]+", sentence)
+    chunks = [c for c in re.split(r"[^A-Za-z0-9\- ]+", sentence) if len(c.split()) >= 2]
+    key = max(chunks, key=len).strip() if chunks else " ".join(words[:4])
+    nids = anki("findNotes", query=f'"{key}"')
+    if not nids:
+        return None
+    target = norm(sentence)
+    for n in anki("notesInfo", notes=nids):
+        if any(target in norm(f["value"]) for f in n["fields"].values()):
+            return datetime.date.fromtimestamp(n["noteId"] / 1000).isoformat()
+    return None
+
+
+def verify(s):
+    """チェック行を全部照合して「✅ Anki M/D」を付けた本文と、見つからなかった英文を返す。"""
+    missing = []
+
+    def mark(m):
+        en = m.group(2).strip()
+        got = find_in_anki(en)
+        if not got:
+            missing.append(en)
+            return m.group(0)
+        return f"{m.group(1)}{en} ✅ Anki {int(got[5:7])}/{int(got[8:10])}"
+    out = CHECK.sub(mark, s)
+    out = re.sub(r"^status: .*$", "status: Anki済み", out, count=1, flags=re.M)
+    return out, missing
+
+
+def trash(p):
+    if sys.platform == "darwin":
+        cmd = ["osascript", "-e", f'tell application "Finder" to delete (POSIX file "{p}" as alias)']
+    elif os.name == "nt":
+        cmd = ["powershell", "-NoProfile", "-Command",
+               "Add-Type -AssemblyName Microsoft.VisualBasic; [Microsoft.VisualBasic.FileIO.FileSystem]::DeleteFile("
+               f"'{p}','OnlyErrorDialogs','SendToRecycleBin')"]
+    else:
+        raise RuntimeError("ゴミ箱に移す方法がない OS")
+    subprocess.run(cmd, check=True, capture_output=True)
+
+
+def git(*a):
+    return subprocess.run(["git", "-C", str(REPO), *a], capture_output=True, text=True)
+
+
 def main(dry):
-    done = []
+    saved, stopped = [], []
     for p in sorted(PAGES.glob("🗣 英語 *.md")):
-        fm, sess, phrases = parse(p)
-        if fm.get("status") != "Anki済み":
+        s = io.open(p, encoding="utf-8").read()
+        if not CHECK.search(s):
+            continue  # まだチェックしていないページ（お題・話した・取り込み済み）は触らない
+        fm = parse(s)[0]
+        out, missing = verify(s)
+        if missing:
+            stopped.append(p.name)
+            print(f"⛔ {p.name}: Anki に見つからない {len(missing)}件 → このページは残す")
+            for en in missing:
+                print(f"   - {en}")
             continue
+        _, sess, phrases = parse(out)
         dest = REPO / fm["date"][:7] / fm["date"] / "odai_page.md"
-        print(f"{p.name}: 記録 {len(phrases)}件 → {dest.relative_to(REPO)}")
+        print(f"✅ {p.name}: Anki照合 {len(CHECK.findall(out))}件OK・記録 {len(phrases)}件 → {dest.relative_to(REPO)}")
         if dry:
             continue
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        io.open(dest, "w", encoding="utf-8", newline="\n").write(out)
         upsert(HERE / "sessions.jsonl", [sess], "date")
         upsert(HERE / "phrases.jsonl", phrases, "id")
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        shutil.move(str(p), str(dest))
-        done.append(p.name)
-    if not done and not dry:
-        print("Anki済みのページはありません")
+        saved.append((p, fm["date"], dest))
+    if dry or not saved:
+        if not saved and not stopped and not dry:
+            print("チェック済みのページはありません")
+        return 1 if stopped else 0
+
+    paths = [str(d.relative_to(REPO)) for _, _, d in saved] + ["odai/sessions.jsonl", "odai/phrases.jsonl"]
+    git("add", *paths)
+    dates = "・".join(d for _, d, _ in saved)
+    if git("diff", "--cached", "--quiet").returncode != 0:
+        c = git("commit", "-m", f"data: {dates}の英語お題をAnki照合して保存")
+        if c.returncode != 0:
+            print("⛔ commit に失敗 → Obsidian のページは残す\n" + c.stderr)
+            return 1
+    print("コミット済み" + ("" if git("push").returncode == 0 else "（push 失敗。あとで git push）"))
+    for p, _, _ in saved:
+        trash(p)
+        print(f"🗑 ゴミ箱へ: {p.name}")
+    return 1 if stopped else 0
 
 
 if __name__ == "__main__":
-    main("--dry-run" in sys.argv)
+    sys.exit(main("--dry-run" in sys.argv))

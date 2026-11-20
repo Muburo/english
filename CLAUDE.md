@@ -22,13 +22,20 @@ english/
 ├── reports/        # ライトレビュー出力（quick-*.md）。archive/ に旧フル/週次レビュー
 ├── history/        # 練習の歩み（PRACTICE-HISTORY.md）・表現ストック（EXPRESSION-STOCK.md）
 ├── progress/       # 月次進化レポート（progress-YYYY-MM.md / TIMELINE.md）
-├── odai/           # 英語お題の記録帳（sessions.jsonl=1日1行 / phrases.jsonl=言いたかった1件1行）＋ archive_odai.py（Anki済みページを記録→本体を YYYY-MM-DD/odai_page.md へ移して Obsidian から消す）
+├── odai/           # 英語お題の記録帳（sessions.jsonl=1日1行 / phrases.jsonl=言いたかった1件1行）＋ archive_odai.py（「チェックした英語を取り込んで」の一連の手順＝Anki照合→本体を YYYY-MM-DD/odai_page.md と記録帳へ保存→commit/push→Obsidian の元ページをゴミ箱へ）
 └── YYYY-MM/        # 月別フォルダ
     └── YYYY-MM-DD/ # 日付フォルダ（1日1フォルダ）
         ├── en_log.md   # 英語スピーチの書き起こし（音声認識）
         ├── ja_log.md   # 日本語での振り返り（音声入力）
-        └── odai_page.md # 英語お題の練習ページ本体（Anki済みで Obsidian から移す・2026-11-19〜）
+        └── odai_page.md # 英語お題の練習ページ本体（Anki照合後に保存し、Obsidian の元ページはゴミ箱へ・2026-11-21〜）
 ```
+
+### 英語お題「チェックした英語を取り込んで」（2026-11-21 本人決定）
+合言葉「チェックした英語を取り込んで」→ `python odai/archive_odai.py` を回す（先に `--dry-run` で照合結果を見てよい）。1ページずつ次を完走する:
+1. **Anki照合**: チェック（`- [x]`）した英文が全部 Anki に入っているか AnkiConnect で確かめ、行に「✅ Anki M/D」を付ける。1つでも無ければそのページは止めて本人に一覧を出す（Anki 登録はこの手順ではしない）
+2. **保存**: ページ本体＝`YYYY-MM/YYYY-MM-DD/odai_page.md`（status: Anki済み）、学習記録＝`odai/sessions.jsonl`・`phrases.jsonl`
+3. **commit → push**（commit できなければ 4 に進まない）
+4. **Obsidian の元ページをゴミ箱へ**（OS のゴミ箱。完全削除はしない）
 
 ### データの特徴
 - `en_log.md`: 即興スピーチのため文法・構成が不完全。音声認識の誤りも含む
