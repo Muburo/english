@@ -22,6 +22,7 @@ english/
 ├── reports/        # ライトレビュー出力（quick-*.md）。archive/ に旧フル/週次レビュー
 ├── history/        # 練習の歩み（PRACTICE-HISTORY.md）・表現ストック（EXPRESSION-STOCK.md）
 ├── progress/       # 月次進化レポート（progress-YYYY-MM.md / TIMELINE.md）
+├── odai/           # 英語お題の記録帳（sessions.jsonl=1日1行 / phrases.jsonl=言いたかった1件1行）＋ archive_odai.py（Anki済みページを記録→🗂 練習ログ へしまう）
 └── YYYY-MM/        # 月別フォルダ
     └── YYYY-MM-DD/ # 日付フォルダ（1日1フォルダ）
         ├── en_log.md   # 英語スピーチの書き起こし（音声認識）
