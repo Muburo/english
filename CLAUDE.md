@@ -22,11 +22,12 @@ english/
 ├── reports/        # ライトレビュー出力（quick-*.md）。archive/ に旧フル/週次レビュー
 ├── history/        # 練習の歩み（PRACTICE-HISTORY.md）・表現ストック（EXPRESSION-STOCK.md）
 ├── progress/       # 月次進化レポート（progress-YYYY-MM.md / TIMELINE.md）
-├── odai/           # 英語お題の記録帳（sessions.jsonl=1日1行 / phrases.jsonl=言いたかった1件1行）＋ archive_odai.py（Anki済みページを記録→🗂 練習ログ へしまう）
+├── odai/           # 英語お題の記録帳（sessions.jsonl=1日1行 / phrases.jsonl=言いたかった1件1行）＋ archive_odai.py（Anki済みページを記録→本体を YYYY-MM-DD/odai_page.md へ移して Obsidian から消す）
 └── YYYY-MM/        # 月別フォルダ
     └── YYYY-MM-DD/ # 日付フォルダ（1日1フォルダ）
         ├── en_log.md   # 英語スピーチの書き起こし（音声認識）
-        └── ja_log.md   # 日本語での振り返り（音声入力）
+        ├── ja_log.md   # 日本語での振り返り（音声入力）
+        └── odai_page.md # 英語お題の練習ページ本体（Anki済みで Obsidian から移す・2026-11-19〜）
 ```
 
 ### データの特徴

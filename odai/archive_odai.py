@@ -1,10 +1,11 @@
-"""英語お題: Anki済みの練習ページを記録に残して、Obsidian の一覧から 🗂 練習ログ/YYYY-MM/ へ移す。
+"""英語お題: Anki済みの練習ページを記録に残して、Obsidian から english リポへ移す（Obsidian には残さない）。
 
 使い方: python odai/archive_odai.py            # status: Anki済み のページを全部処理
         python odai/archive_odai.py --dry-run  # 何をするかだけ表示
 記録先（このフォルダ）:
   sessions.jsonl … 1行=1日（日付・モード・場面・CEFR・点数）
   phrases.jsonl  … 1行=言いたかった1件（日本語・実際の発話・2案・選んだ案・Anki日・ヒント）
+ページ本体は english/YYYY-MM/YYYY-MM-DD/odai_page.md（en_log/ja_log の隣）に移す。
 同じ id は上書き（二重登録しない）。
 """
 import io, os, re, json, sys, shutil, pathlib
@@ -12,7 +13,7 @@ import io, os, re, json, sys, shutil, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 VAULT = pathlib.Path(os.environ.get("OBSIDIAN_VAULT", ""))
 PAGES = VAULT / "04_Life" / "5.💬英語"
-ARCHIVE = PAGES / "🗂 練習ログ"
+REPO = HERE.parent
 
 
 def parse(path):
@@ -62,8 +63,8 @@ def main(dry):
         fm, sess, phrases = parse(p)
         if fm.get("status") != "Anki済み":
             continue
-        dest = ARCHIVE / fm["date"][:7] / p.name
-        print(f"{p.name}: 記録 {len(phrases)}件 → {dest.relative_to(PAGES)}")
+        dest = REPO / fm["date"][:7] / fm["date"] / "odai_page.md"
+        print(f"{p.name}: 記録 {len(phrases)}件 → {dest.relative_to(REPO)}")
         if dry:
             continue
         upsert(HERE / "sessions.jsonl", [sess], "date")
