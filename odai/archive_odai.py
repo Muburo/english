@@ -175,7 +175,7 @@ def main(dry):
         out, missing = verify(s)
         if missing:
             stopped.append(p.name)
-            print(f"⛔ {p.name}: Anki に見つからない {len(missing)}件 → このページは残す")
+            print(f"⛔ {p.name}: " + ("Anki に見つからない" if ANKI_UP else "Anki に届かず・✅ 印も無い") + f" {len(missing)}件 → このページは残す")
             for en in missing:
                 print(f"   - {en}")
             continue
