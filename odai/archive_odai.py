@@ -100,12 +100,34 @@ def find_in_anki(sentence):
     return None
 
 
+ANKI_UP = None  # None=未確認 / True=AnkiConnect に届く / False=届かない（未起動・サンドボックス）
+
+
+def anki_up():
+    global ANKI_UP
+    if ANKI_UP is None:
+        try:
+            anki("version")
+            ANKI_UP = True
+        except Exception as e:
+            ANKI_UP = False
+            print(f"⚠ AnkiConnect に届かない（{type(e).__name__}）→ 「✅ Anki 日付」の印が付いた行はその印を信じて進む。印の無いチェック行があるページは止める")
+    return ANKI_UP
+
+
 def verify(s):
-    """チェック行を全部照合して「✅ Anki M/D」を付けた本文と、見つからなかった英文を返す。"""
+    """チェック行を全部照合して「✅ Anki M/D」を付けた本文と、見つからなかった英文を返す。
+    Anki に届かないときは、登録した人が付けた「✅ Anki M/D」を登録の証拠として扱う
+    （家の Codex で Anki に入れた直後にしまう、をサンドボックス内でも完走させるため・2026-11-24）。"""
     missing = []
 
     def mark(m):
         en = m.group(2).strip()
+        if not anki_up():
+            if m.group(3):
+                return m.group(0)
+            missing.append(en)
+            return m.group(0)
         got = find_in_anki(en)
         if not got:
             missing.append(en)
@@ -124,8 +146,19 @@ def trash(p):
                "Add-Type -AssemblyName Microsoft.VisualBasic; [Microsoft.VisualBasic.FileIO.FileSystem]::DeleteFile("
                f"'{p}','OnlyErrorDialogs','SendToRecycleBin')"]
     else:
-        raise RuntimeError("ゴミ箱に移す方法がない OS")
-    subprocess.run(cmd, check=True, capture_output=True)
+        cmd = None
+    try:
+        if cmd is None:
+            raise RuntimeError("ゴミ箱に移す方法がない OS")
+        subprocess.run(cmd, check=True, capture_output=True)
+    except Exception:
+        # OS のゴミ箱が使えない（サンドボックス等）→ Obsidian 自身のゴミ箱（vault/.trash）へ移す
+        dest = VAULT / ".trash" / p.name
+        dest.parent.mkdir(exist_ok=True)
+        if dest.exists():
+            dest = dest.with_name(f"{p.stem} {datetime.datetime.now():%H%M%S}{p.suffix}")
+        p.rename(dest)
+        print(f"   （OS のゴミ箱が使えないので Obsidian の .trash へ: {dest.name}）")
 
 
 def git(*a):
