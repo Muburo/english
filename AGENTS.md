@@ -38,6 +38,7 @@ english/
 1. **Anki に入れたら、同じ会話の中でページをしまうまで走る**（別の合言葉を待たない・2026-11-24 本人決定）。チェック行（`- [x]`）に `✅ Anki M/D` を付け `status: Anki済み` にしたら、すぐ `python odai/archive_odai.py` を回す。Anki 登録を anki-story-import でやった場合も同じ
 2. `archive_odai.py` が1ページずつ完走する: **Anki照合**（AnkiConnect。届かないときは `✅ Anki` 印を証拠として扱い、印の無いチェック行があるページだけ止める）→ **保存**（`YYYY-MM/YYYY-MM-DD/odai_page.md`・`odai/sessions.jsonl`・`phrases.jsonl`）→ **commit/push**（commit できなければ次へ進まない）→ **Obsidian の元ページをゴミ箱へ**（OS のゴミ箱。使えなければ vault の `.trash/`）
 3. 話したページの取り込み（ログ保存・CEFR・言いたかった英文の候補2案ずつ）と次の日のお題ページ作成はスキルの手順どおり
+4. **Obsidian の vault には練習ページ以外を作らない**（`AGENTS.md`・隠しの保留フォルダ・差分なども不可・2026-11-25 本人決定）。english リポに書けない環境なら権限を上げて書く。それも無理ならページを残して止め、「calchan で開いて取り込んで」と伝える
 
 ### データの特徴
 - `en_log.md`: 即興スピーチのため文法・構成が不完全。音声認識の誤りも含む
