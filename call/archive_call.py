@@ -18,7 +18,7 @@ sys.path.insert(0, str(HERE.parent / "odai"))
 import archive_odai as od  # noqa: E402  （照合 verify・ゴミ箱 trash・git・upsert・ANKI_UP を共有）
 
 REPO = od.REPO
-PAGES = od.PAGES
+PAGES = od.PAGES / "🛣️ Road to Native"  # 通話まわりの Obsidian ファイルはいったんここにまとめる（2026-11-26 本人指定）
 SECTIONS = {"🟥": "言えなかった", "🟧": "直された", "🟩": "自分で出せた"}
 
 
