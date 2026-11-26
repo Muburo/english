@@ -25,13 +25,19 @@ english/
 ├── reports/        # ライトレビュー出力（quick-*.md）。archive/ に旧フル/週次レビュー
 ├── history/        # 練習の歩み（PRACTICE-HISTORY.md）・表現ストック（EXPRESSION-STOCK.md）
 ├── progress/       # 月次進化レポート（progress-YYYY-MM.md / TIMELINE.md）
+├── call/           # スマホ通話の英会話の記録帳（calls.jsonl=1通話1行 / phrases.jsonl=候補1件1行）＋ archive_call.py（手順の正本＝共有スキル english-call。照合・ゴミ箱は archive_odai.py の部品を使う）
 ├── odai/           # 英語お題の記録帳（sessions.jsonl=1日1行 / phrases.jsonl=言いたかった1件1行）＋ archive_odai.py（「チェックした英語を取り込んで」の一連の手順＝Anki照合→本体を YYYY-MM-DD/odai_page.md と記録帳へ保存→commit/push→Obsidian の元ページをゴミ箱へ）
 └── YYYY-MM/        # 月別フォルダ
     └── YYYY-MM-DD/ # 日付フォルダ（1日1フォルダ）
         ├── en_log.md   # 英語スピーチの書き起こし（音声認識）
         ├── ja_log.md   # 日本語での振り返り（音声入力）
-        └── odai_page.md # 英語お題の練習ページ本体（Anki照合後に保存し、Obsidian の元ページはゴミ箱へ・2026-11-21〜）
+        ├── odai_page.md # 英語お題の練習ページ本体（Anki照合後に保存し、Obsidian の元ページはゴミ箱へ・2026-11-21〜）
+        ├── call_memo.md # スマホ通話の英会話の要点メモ（届いたまま・2026-11-26〜。同日2本目は -2）
+        └── call_page.md # 通話の取り込み候補ノート本体（Anki照合後に保存し、Obsidian の元ノートはゴミ箱へ）
 ```
+
+### スマホ通話の英会話（2026-11-26〜・手順の正本＝共有スキル english-call）
+合言葉「**通話取り込んで**」、または 📞 通話ページにチェックしたあとの「取り込んで」→ **english-call スキル**。流れは英語お題と同じ（通話メモ → Obsidian `📞 通話 YYYY-MM-DD.md` の候補 → 本人がチェック → チェック分だけ Anki `2.俺のストーリー` → `call/archive_call.py` でしまう）。英語お題の 1〜4 のルール（Anki に入れたらしまうまで走る・vault に練習ページ以外を作らない）はこちらにもそのまま当てはまる。Obsidian 側に置くのは受け取り口 `📥 通話メモ.md` と候補ノートだけ
 
 ### 英語お題（2026-11-19〜・手順の正本＝共有スキル english-odai）
 合言葉「**英語取り込んで**」「チェックした英語を取り込んで」「英語お題しまって」→ **english-odai スキル**（`~/.claude/skills/english-odai/SKILL.md`。Codex も `~/.codex/skills` 経由で同じものを読む）に従う。スキルが読めない環境でも、最低限次は守る:
