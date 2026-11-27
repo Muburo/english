@@ -22,7 +22,7 @@ CHECK = re.compile(r"^(- \[x\] )(.*?)(?:\s*✅ Anki (\S+))?$", re.M)
 def parse(s):
     fm = dict(re.findall(r"^(\w+): (.*)$", s.split("---")[1], re.M))
     head = s.split("## 今日のお題")[0]
-    m = re.search(r"\*\*CEFR：(\w+)（(\d+)点", head)
+    m = re.search(r"\*\*CEFR：([\w+]+)（(\d+)点", head)
     date = fm["date"]
     sess = {"date": date, "mode": fm.get("mode"), "scene": fm.get("scene"),
             "cefr": m.group(1) if m else None, "score": int(m.group(2)) if m else None}
