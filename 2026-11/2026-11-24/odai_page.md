@@ -1,99 +1,88 @@
 ---
 date: 2026-11-24
 mode: 日常
-scene: ドラッグストア｜喉の痛みで薬を相談
+scene: ホテル｜予約が見つからない
 status: Anki済み
 ---
 
-## ✅ 言いたかった英文（取り込み 11/23）
+## ✅ 言いたかった英文（取り込み 11/24）
 > 覚えたい文に**3つくらい**チェック → 次の「英語取り込んで」で Anki へ
 
-**CEFR：B1（48点・前回 57点）**　②の返し "No, I don't have a fever, I just have a sore throat." は自然で◎（sore throat が出たのは大きい）。点が下がったのは3つ：③で *drowsy*（眠くなる）が聞き取れず日本語に切り替わった、ゴールの「眠くならない薬」と「飲み方の確認」に届かなかった、最後のお礼が抜けた。あと①は店員さんから声をかけてきてるから、"Excuse me, can I ask something?" じゃなくて "Yes, I'm looking for ~" で返すと噛み合う。
-※ "medicine to cure my throat"／"it has a strong pain" は伝わるけど、喉の薬は **something for a sore throat**、痛みは **It really hurts** が普通の言い方。
+**CEFR：B1（56点・前回 48点）**　最後まで英語で言い切れたのが今日いちばんの成長（前回は③で日本語に崩れた）。それと、昨日教わった **Thank you for sorting that out. I really appreciate it.** をさっそく使えてる。しかも予約トラブルを片付けてもらった場面だから、sort out がドンピシャ。点が伸びきらなかったのは3つ：①で名前を聞かれたのに名乗ってない、②の "Did you book directly with us?"（直接予約した？）に答えてない、③の「喫煙の部屋しかない」に返さず "can I book a room?" で終わった。
+※ **order number** は通販の注文番号。ホテルの予約番号は **confirmation number**。**No way** はフロントの人には強すぎるから **That's strange** くらいが安全。
 
-### 1. 喉が痛くて炎症してる、治す薬を探してる
-言いたかった：「喉が痛くて、結構炎症しているみたいなので、これを治す薬を探しています」
-あんたの発話：*"I'd like to find medicine to cure my throat. Actually, my throat hurts; it has a strong pain."*
-- [ ] Yes, I'm looking for something for a sore throat. It's pretty inflamed and really hurts.
-- [x] I've got a really bad sore throat — I think it's inflamed. Do you have anything that works well? ✅ Anki 11/24
+### 1. 予約している〇〇です、チェックインお願いします
+言いたかった：「こんにちは。予約している〇〇です。チェックインをお願いします」
+あんたの発話：*"I'd like to check in. I have a reservation, and here is my reservation number."*
+- [ ] Hi, I'd like to check in, please. I have a reservation under Yokotsuka.
+- [x] Good evening. Checking in, please — the reservation's under Yokotsuka. ✅ Anki 11/25
 
-💡 頭に浮かんでた「F」は多分 **inflamed**（in-**flame**-d＝炎がついた → 炎症した）。薬局では medicine より **something for ~**（~に効くもの）が自然。cure は「完治させる」で重いから使わなくていい。
+💡 **under + 名前**（〇〇の名前で）が決まり文句。予約番号より先に名前を言うのが普通。
 
-### 2. 熱はないけど咳と鼻水が出る
-言いたかった：「熱はありませんが、咳や鼻水が出ます」
-あんたの発話：*"No, I don't have a fever, I just have a sore throat."*
-- [x] No fever, but I have a cough and a runny nose. ✅ Anki 11/24
-- [ ] I don't have a fever, but I've been coughing and my nose is running.
+### 2. そんなはずない、確かに予約した、予約番号もある、もう一度確認して
+言いたかった：「そんなはずはないです。確かに予約したはずです。ここに予約番号もあります。もう一度確認してもらえますか？」
+あんたの発話：*"No way, I'm pretty sure I reserved it. Would you double-check the reservation? My order number is..."*
+- [x] That's strange — I'm sure I booked it. Here's my confirmation number. Could you check again, please? ✅ Anki 11/25
+- [ ] Really? I definitely made a reservation. I have the confirmation email right here. Could you take another look?
 
-💡 鼻水＝**a runny nose**、咳＝**a cough**（動詞は cough）。② の「throat or chest?」には **It's my throat.** と先に一言返すと完璧。
+💡 「確かに〜したはず」＝**I'm sure I ~ / I definitely ~**。I'm pretty sure は「たぶん」寄りで自信が弱く聞こえる。頼むときは Would より **Could you ~?** が柔らかい。
 
-### 3. 味や食感は気にしない、効けば何でもいい
-言いたかった：「味や食感は全く気にしません。ちゃんと効けば何でも構いません」
-あんたの発話：*（日本語）「味もない、テクスチャー最大のことが治療すること」*
-- [x] I don't care about the taste or texture at all. Anything's fine as long as it works. ✅ Anki 11/24
-- [ ] Taste doesn't matter to me — I just want something that actually works.
+### 3. 仕方ないので、喫煙の部屋で（禁煙の部屋を）お願いします
+言いたかった：「分かりました。では仕方がないので、喫煙（あるいは禁煙）の部屋を取ってもらえますか？」
+あんたの発話：*"In that case, can I book a room?"*
+- [x] I see. Well, I guess I don't have much choice. I'll take the smoking room. ✅ Anki 11/25
+- [ ] Okay, if that's the only option, I'll take it. Could I move to a non-smoking room tomorrow if one opens up?
 
-💡 **as long as it works**（効きさえすれば）が決め台詞。I don't care はぶっきらぼうに聞こえることもあるので、店員相手なら **I don't mind ~** でも可。
+💡 「仕方がないので」＝**I guess I don't have much choice**（他に選べないし）／**if that's the only option**（それしかないなら）。In that case（それなら）は出だしとして◎、そのあとに何をどうしたいかを足すと完成。
 
-### 4. 眠くなるのは困る（明日は大事な会議）（おまけ：言えるといい表現）
-③の「ドロールデイ」は **drowsy**（ドラウズィ＝眠くなる）。これが聞き取れなかったのが今日いちばんの穴。お題のゴールそのもの。
-- [x] Actually, I'd rather not get drowsy. I have an important meeting tomorrow. Do you have a non-drowsy one? ✅ Anki 11/24
-- [ ] Hmm, that won't work for me — I have a big meeting tomorrow. Is there anything that won't make me sleepy?
+### 4. 予約サイトで取った（"Did you book directly with us?" への答え）（おまけ：振り返りの「reserved が苦手」への答え）
+話し言葉では **reserve** より **book** の方が普通。「予約した」＝**I booked it**／**I made a reservation**、「予約がある」＝**I have a reservation**。I reserved it も間違いじゃないけど少し硬い。②の「直接うちで？」には、どこで取ったかを一言返すと確認が早くなる。
+- [x] No, I booked it through Booking.com. Here's the confirmation email. ✅ Anki 11/25
+- [ ] Yes, I booked it on your website about two weeks ago.
 
-💡 **non-drowsy**＝眠くならない（箱にもこう書いてある）。聞き取れなかったら **Sorry, drowsy?** と単語だけ聞き返せばいい。
+💡 **book through ~**（〜経由で予約）／**book on your website**（そちらのサイトで）。booking だけで「予約」の名詞にもなる（I can't find your booking.）。
 
-### 5. 飲み方を確かめて、お礼で締める（おまけ：振り返りの質問への答え）
-「Thanks so much for sorting that out? Appreciate it?」への答え：どっちも通じる。ただ **sort out** は「トラブルを片付ける」寄りで、駅の窓口向き。薬を選んでもらった場面なら **Thanks for your help** が一番しっくりくる。**Appreciate it** は軽めのカジュアルでOK。
-- [ ] Great, I'll take this one. How often should I take it?
-- [ ] Perfect, thanks so much for your help. I really appreciate it.
+### 5. お礼で締める（おまけ：振り返りの質問への答え）
+今日言えた "Thank you for sorting that out. I really appreciate it." はこの場面にぴったり。もう一言足すなら、遅い時間に手間をかけたことへの気づかい。
+- [ ] Thanks for sorting that out. I know it's been a hassle — I really appreciate it.
+- [x] Thank you so much for your help. Sorry for the trouble, and have a good night. ✅ Anki 11/25
 
-💡 飲み方＝**How often should I take it? / How many should I take?**。買うと決めたら **I'll take this one.**
+💡 **a hassle**（面倒なこと）。日本語の「お手数おかけしました」に近いのは **Sorry for the trouble.**
 
 ---
 
 ## 今日のお題
-💊 **ドラッグストア｜喉が痛くて薬を選びたい（明日は大事な会議）**（あなた＝客）
-**ゴール**：症状を伝えて、眠くならない薬を選んでもらい、飲み方を確かめて買う
+🏨 **ホテルのフロント｜予約が見つからないと言われた（夜8時・疲れてる）**（あなた＝宿泊客）
+**ゴール**：予約したことを伝えて確認してもらい、今夜の部屋を確保する（条件が合わなければ代わりを相談）
 
-店員① "Hi, can I help you find something?"
-店員② "Sorry, did you say your throat or your chest? And do you have a fever?"
-店員③ "This one works well, but it might make you a bit drowsy. Is that okay?"
+フロント① "Good evening. Checking in? May I have your name, please?"
+フロント② "Hmm, I'm sorry, I can't find a reservation under that name. Did you book directly with us?"
+フロント③ "We're actually fully booked tonight. The only room left is a smoking room. Would that work for you?"
 
 （①→③に順番に返して、最後はお礼で締める）
 
 ---
 ## 🎙 英語
-Excuse me, sir, can I ask something?
+I'd like to check in. I have a reservation, and here is my reservation number.
 
-I'd like to find medicine to cure my throat. Actually, my throat hurts; it has a strong pain. No, I don't have a fever, I just have a sore throat.
+You can't find my reservation? No way, I'm pretty sure I reserved it. Would you double-check the reservation? My order number is...
 
-ドロールデイ？ドロールデイはスティック？大丈夫、大丈夫です。味もない、テクスチャー最大のことが治療すること。
+In that case, can I book a room?Thank you for sorting that out. I really appreciate it.
 
 ## 🇯🇵 振り返り
-言えないね。いろいろ言えないのが見つかるね。
+ホテルのチェックインで使える自然な英語フレーズを教えてほしいです。特に「reserved」の使い方が苦手なので、知りたい表現がいくつかあります。
 
-まず、言えなかったフレーズ：
-「すみません、薬を探しているんですけど。喉が痛くて、結構喉が炎症しているみたいなので、これを治すための薬を探しています」
+言えるようにしたいフレーズ：
 
-「炎症」とか、Fから始まるやつで頭には浮かんでいるんだけど、やっぱり出なかったわ。
-
-言えるようにするフレーズ：
-「私はちょっと喉が痛くて、結構喉が炎症しているので、これを治すための薬を探しています」
-
-これは言えるようにしよう。そうですね、あと…熱があるって聞かれて：
-「熱はありませんが、咳や鼻水が出ます」
-これは言えるようにしよう。
-
-あと何だろうな：
-「私は味や食感は全く気にしません。適切に効けば何でも構いません」
-これも言えるようにしようか。意外と出ないもんだな。
-
-で、こういう時って最後に何て言えばいいんだろう。店員が何か探してくれたら、このケースって何て言えばいいのかな。
-Thanks so much for sorting that out?
-Appreciate it?
-そんなんでいいのかな。それとも Thank you そういう感じ？
-
-このシーンにおける適切なお礼があれば教えて。まあそんなところだね。
+1. チェックイン時（フロントでの最初の挨拶）：
+ホテルに行ってフロントで最初に話すとき、「こんにちは。予約している〇〇です。チェックインをお願いします」と伝える自然な言い回し。
+2. 予約が見当たらないと言われたときの確認：
+「そんなはずはないです。確かに予約したはずです。ここに予約番号もあります。もう一度確認してもらえますか？」
+3. 妥協して別の部屋をお願いするとき：
+「分かりました。では仕方がないので、喫煙（あるいは禁煙）の部屋を取ってもらえますか？」
+（この「仕方がないので」というニュアンスを含めた表現を知りたいです）
+4. 最後に：
+こういったケースでのお礼の伝え方も教えてください。
 
 ---
 📍 最近困ったこと（任意）:

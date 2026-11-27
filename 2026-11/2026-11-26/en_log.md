@@ -1,11 +1,7 @@
-Good morning, sir. I'm flying to Shanghai in China. The flight number is JL 628. Here's my passport.
+Hi. I'd like to go to the APA Hotel near Nishi-Nippori Station. Do you know it?
 
-Should I put my suitcase on this?
+It's near Nishi-Nippori Station, about 3 km from here. It takes about 15 to 30 minutes. Would it be possible to go there?
 
-My suitcase is overweight? No way! How many kilograms is it over? 2.3 kg?
+Oh, you know it? Okay.
 
-All right, in that case, I'll reduce it. I think I'll throw part of my luggage away. I should step aside for a moment to deal with my things. Should I come back here, or is it okay to do it right now?
-
-All right, I reduced my luggage, so maybe this time the weight is okay. Let's check.
-
-Oh, thank you for your help! Sorry for the trouble. Have a good day!
+About cash: I don't have cash. Can I use a card? If you need cash no matter what, I'll have to withdraw money at a convenience store.Okay, then in this case I will go to the cache. Okay, the program is over. Thank you for your help, sorry for the trouble.

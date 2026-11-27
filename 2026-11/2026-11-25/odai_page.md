@@ -1,88 +1,88 @@
 ---
 date: 2026-11-25
 mode: 日常
-scene: ホテル｜予約が見つからない
+scene: 空港｜荷物が重量オーバー
 status: Anki済み
 ---
 
-## ✅ 言いたかった英文（取り込み 11/24）
+## ✅ 言いたかった英文（取り込み 11/25）
 > 覚えたい文に**3つくらい**チェック → 次の「英語取り込んで」で Anki へ
 
-**CEFR：B1（56点・前回 48点）**　最後まで英語で言い切れたのが今日いちばんの成長（前回は③で日本語に崩れた）。それと、昨日教わった **Thank you for sorting that out. I really appreciate it.** をさっそく使えてる。しかも予約トラブルを片付けてもらった場面だから、sort out がドンピシャ。点が伸びきらなかったのは3つ：①で名前を聞かれたのに名乗ってない、②の "Did you book directly with us?"（直接予約した？）に答えてない、③の「喫煙の部屋しかない」に返さず "can I book a room?" で終わった。
-※ **order number** は通販の注文番号。ホテルの予約番号は **confirmation number**。**No way** はフロントの人には強すぎるから **That's strange** くらいが安全。
+**CEFR：B1（58点・前回 48点）**　"I should step aside for a moment to deal with my things. Should I come back here, or is it okay to do it right now?" は振り返りで「言えない」と書いてたけど、実は**ほぼ言えてる**（step aside は満点の言い方）。前回教えた **Thank you for your help** もちゃんと締めで使えてた◎。点が伸びなかったのは3つ：ゴールの「通路側の席を頼む」が抜けた、③の遅延（pushed back・10:40・gate 32）に一言も返してない、係員は **four kilos** と言ってるのに 2.3 kg と返した（聞き取り）。
+※ "throw part of my luggage away" は「荷物を捨てる」になるので、減らすなら **take a few things out**。"Shanghai in China" の in China はなくていい。
 
-### 1. 予約している〇〇です、チェックインお願いします
-言いたかった：「こんにちは。予約している〇〇です。チェックインをお願いします」
-あんたの発話：*"I'd like to check in. I have a reservation, and here is my reservation number."*
-- [ ] Hi, I'd like to check in, please. I have a reservation under Yokotsuka.
-- [x] Good evening. Checking in, please — the reservation's under Yokotsuka. ✅ Anki 11/25
+### 1. 上海行き8時45分の便、JAL 628便
+言いたかった：「上海行きの8時45分の便に乗る予定です。便名はJALの628便です」
+あんたの発話：*"I'm flying to Shanghai in China. The flight number is JL 628. Here's my passport."*
+- [ ] I'm flying to Shanghai on the 8:45 flight — JL 628. Here's my passport.
+- [x] I'm on the 8:45 JAL flight to Shanghai, flight 628. Here you go. ✅ Anki 11/26
 
-💡 **under + 名前**（〇〇の名前で）が決まり文句。予約番号より先に名前を言うのが普通。
+💡 **on the 8:45 flight**（～時の便に乗る）で時刻と便を一気に言える。便名は「J-L six-two-eight」と1桁ずつ読めば通じる。
 
-### 2. そんなはずない、確かに予約した、予約番号もある、もう一度確認して
-言いたかった：「そんなはずはないです。確かに予約したはずです。ここに予約番号もあります。もう一度確認してもらえますか？」
-あんたの発話：*"No way, I'm pretty sure I reserved it. Would you double-check the reservation? My order number is..."*
-- [x] That's strange — I'm sure I booked it. Here's my confirmation number. Could you check again, please? ✅ Anki 11/25
-- [ ] Really? I definitely made a reservation. I have the confirmation email right here. Could you take another look?
+### 2. 重量オーバー？何キロオーバー？
+言いたかった：「私の荷物が重量オーバーしていますか？何キロぐらいオーバーしていますか？」
+あんたの発話：*"My suitcase is overweight? No way! How many kilograms is it over? 2.3 kg?"*
+- [x] Oh, is it overweight? How much over is it? ✅ Anki 11/26
+- [ ] Really? By how many kilos am I over the limit?
 
-💡 「確かに〜したはず」＝**I'm sure I ~ / I definitely ~**。I'm pretty sure は「たぶん」寄りで自信が弱く聞こえる。頼むときは Would より **Could you ~?** が柔らかい。
+💡 **How much over?** が一番短くて自然。差を言うときは **by**（over by four kilos＝4キロ超過）。kilograms より **kilos** が口語。
 
-### 3. 仕方ないので、喫煙の部屋で（禁煙の部屋を）お願いします
-言いたかった：「分かりました。では仕方がないので、喫煙（あるいは禁煙）の部屋を取ってもらえますか？」
-あんたの発話：*"In that case, can I book a room?"*
-- [x] I see. Well, I guess I don't have much choice. I'll take the smoking room. ✅ Anki 11/25
-- [ ] Okay, if that's the only option, I'll take it. Could I move to a non-smoking room tomorrow if one opens up?
+### 3. 荷物を減らしたい。ここでやるか、列を離れて並び直すか
+言いたかった：「分かりました。荷物を減らして軽くしたいと思います。今ここで荷物の処理をしてもいいですか？それとも一度列から離れて、減らし終わったらまた並び直した方がいいですか？」
+あんたの発話：*"All right, in that case, I'll reduce it. I think I'll throw part of my luggage away. I should step aside for a moment to deal with my things. Should I come back here, or is it okay to do it right now?"*
+- [ ] Okay, I'll take a few things out to make it lighter. Can I do it right here, or should I step aside and come back when I'm done?
+- [x] Got it, I'll lighten my bag. Is it okay to repack here, or should I get out of line and line up again afterward? ✅ Anki 11/26
 
-💡 「仕方がないので」＝**I guess I don't have much choice**（他に選べないし）／**if that's the only option**（それしかないなら）。In that case（それなら）は出だしとして◎、そのあとに何をどうしたいかを足すと完成。
+💡 「荷物を軽くする」＝**take a few things out**（中身を出す）／**lighten my bag**。詰め直す＝**repack**。reduce my luggage でも通じるけど、カウンターではこの2つが普通。
 
-### 4. 予約サイトで取った（"Did you book directly with us?" への答え）（おまけ：振り返りの「reserved が苦手」への答え）
-話し言葉では **reserve** より **book** の方が普通。「予約した」＝**I booked it**／**I made a reservation**、「予約がある」＝**I have a reservation**。I reserved it も間違いじゃないけど少し硬い。②の「直接うちで？」には、どこで取ったかを一言返すと確認が早くなる。
-- [x] No, I booked it through Booking.com. Here's the confirmation email. ✅ Anki 11/25
-- [ ] Yes, I booked it on your website about two weeks ago.
+### 4. 通路側の席を頼む（おまけ：言えるといい表現）
+お題のゴールの1つ。どこで言ってもいいので、①の後か最後に一言はさめば達成だった。
+- [ ] By the way, could I get an aisle seat if there's one available?
+- [x] Would it be possible to have an aisle seat, please? ✅ Anki 11/26
 
-💡 **book through ~**（〜経由で予約）／**book on your website**（そちらのサイトで）。booking だけで「予約」の名詞にもなる（I can't find your booking.）。
+💡 aisle は s を読まずに「**アイル**」。窓側は **a window seat**。
 
-### 5. お礼で締める（おまけ：振り返りの質問への答え）
-今日言えた "Thank you for sorting that out. I really appreciate it." はこの場面にぴったり。もう一言足すなら、遅い時間に手間をかけたことへの気づかい。
-- [ ] Thanks for sorting that out. I know it's been a hassle — I really appreciate it.
-- [x] Thank you so much for your help. Sorry for the trouble, and have a good night. ✅ Anki 11/25
+### 5. 遅延と搭乗口を確かめる（おまけ：言えるといい表現）
+③の **pushed back**＝（出発が）後ろにずれた＝遅延。聞いたら復唱して確かめるのがゴール。
+- [ ] Oh, it's been pushed back? Just to confirm — boarding at 10:40 from gate 32?
+- [ ] Sorry, did you say the flight's delayed by an hour? So it's gate 32 at 10:40?
 
-💡 **a hassle**（面倒なこと）。日本語の「お手数おかけしました」に近いのは **Sorry for the trouble.**
+💡 **Just to confirm — ~?** は数字を確かめる万能の前置き。空港・ホテル・電話どこでも使える。
 
 ---
 
 ## 今日のお題
-🏨 **ホテルのフロント｜予約が見つからないと言われた（夜8時・疲れてる）**（あなた＝宿泊客）
-**ゴール**：予約したことを伝えて確認してもらい、今夜の部屋を確保する（条件が合わなければ代わりを相談）
+✈️ **空港のチェックインカウンター｜スーツケースが重量オーバーと言われた**（あなた＝乗客）
+**ゴール**：重さの対処を相談して決め（払う／中身を出す）、通路側の席を頼み、遅れの情報を確かめて手続きを終える
 
-フロント① "Good evening. Checking in? May I have your name, please?"
-フロント② "Hmm, I'm sorry, I can't find a reservation under that name. Did you book directly with us?"
-フロント③ "We're actually fully booked tonight. The only room left is a smoking room. Would that work for you?"
+係員① "Good morning! Where are you flying to today? Passport, please."
+係員② "Hmm, your suitcase is four kilos over the limit. You can pay the excess baggage fee, or take a few things out. What would you like to do?"
+係員③ "Okay, you're all set. Oh, just so you know, the flight's been pushed back about an hour. Boarding is now at 10:40 from gate 32."
 
-（①→③に順番に返して、最後はお礼で締める）
+（①→③に順番に返して、どこかで通路側の席を頼み、最後はお礼で締める）
 
 ---
 ## 🎙 英語
-I'd like to check in. I have a reservation, and here is my reservation number.
+Good morning, sir. I'm flying to Shanghai in China. The flight number is JL 628. Here's my passport.
 
-You can't find my reservation? No way, I'm pretty sure I reserved it. Would you double-check the reservation? My order number is...
+Should I put my suitcase on this?
 
-In that case, can I book a room?Thank you for sorting that out. I really appreciate it.
+My suitcase is overweight? No way! How many kilograms is it over? 2.3 kg?
+
+All right, in that case, I'll reduce it. I think I'll throw part of my luggage away. I should step aside for a moment to deal with my things. Should I come back here, or is it okay to do it right now?
+
+All right, I reduced my luggage, so maybe this time the weight is okay. Let's check.
+
+Oh, thank you for your help! Sorry for the trouble. Have a good day!
 
 ## 🇯🇵 振り返り
-ホテルのチェックインで使える自然な英語フレーズを教えてほしいです。特に「reserved」の使い方が苦手なので、知りたい表現がいくつかあります。
+空港で全然言えなくて、スラスラスラって言えるようにしておきたい英語（自然な言い方を教えてほしい）：
 
-言えるようにしたいフレーズ：
-
-1. チェックイン時（フロントでの最初の挨拶）：
-ホテルに行ってフロントで最初に話すとき、「こんにちは。予約している〇〇です。チェックインをお願いします」と伝える自然な言い回し。
-2. 予約が見当たらないと言われたときの確認：
-「そんなはずはないです。確かに予約したはずです。ここに予約番号もあります。もう一度確認してもらえますか？」
-3. 妥協して別の部屋をお願いするとき：
-「分かりました。では仕方がないので、喫煙（あるいは禁煙）の部屋を取ってもらえますか？」
-（この「仕方がないので」というニュアンスを含めた表現を知りたいです）
-4. 最後に：
-こういったケースでのお礼の伝え方も教えてください。
+1. 「上海行きの8時45分の便に乗る予定です。便名はJALの628便です」
+（上海行き、便名、航空会社をスムーズに言いたい）
+2. 「私の荷物が重量オーバーしていますか？何キロぐらいオーバーしていますか？」
+3. 「分かりました。荷物を減らして軽くしたいと思います。今ここで荷物の処理（減らす作業）をしてもいいですか？それとも一度列から離れて、荷物を減らし終わったらまたここに並び直した方がいいですか？」
+（こういう時に「荷物を軽くする」ってどう言えばいいかも、どこかの部分に含めて教えてほしい）
 
 ---
 📍 最近困ったこと（任意）:

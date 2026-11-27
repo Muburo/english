@@ -1,5 +1,5 @@
-Excuse me, sir, can I ask something?
+I'd like to check in. I have a reservation, and here is my reservation number.
 
-I'd like to find medicine to cure my throat. Actually, my throat hurts; it has a strong pain. No, I don't have a fever, I just have a sore throat.
+You can't find my reservation? No way, I'm pretty sure I reserved it. Would you double-check the reservation? My order number is...
 
-（③は日本語に切り替わった：ドロールデイ？ドロールデイはスティック？大丈夫、大丈夫です。味もない、テクスチャー最大のことが治療すること。）
+In that case, can I book a room? Thank you for sorting that out. I really appreciate it.
